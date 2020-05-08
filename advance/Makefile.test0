@@ -1,0 +1,12 @@
+var-kept:
+	export foo=bar;\
+	echo "foo=[$$foo]"
+
+.ONESHELL:
+var-kept-tmp:
+	export foo=lal;
+	echo "foo=[$$foo]"
+
+.PHONY: clean
+clean:
+	rm -f source
