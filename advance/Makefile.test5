@@ -1,0 +1,3 @@
+# test for '$<', '$<' presents first prerequisites  
+g.txt: h.txt i.txt
+	cp $? $@ #cp $< $@

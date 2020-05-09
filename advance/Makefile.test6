@@ -1,0 +1,6 @@
+# test example for automatic variables
+dest/%.txt: src/%.txt
+	if [ ! -d dest ];
+	then mkdir dest
+	fi
+	cp $< $@
